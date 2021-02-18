@@ -1,16 +1,17 @@
 // Composite.cpp
 #include <iostream>
 #include "Composite.h"
-#include "Cube.h"
 using namespace std;
 
-Composite::Composite(Cube* cubes, int count) {
-	cubes = new Cube[count];
+Composite::Composite(Cube* cube, int counts) {
+	cubes = cube;
+	count = counts;
 }
 
 int Composite::getTotalVolume() {
     int volume = 0;
-    for (int i = 0; i < count; i++) {
-        volume += cubes[i]::getVolume();
+    for (int i = 0; i < _count; i++) {
+        volume += _cubes[i].getVolume();
 	}
+	return volume;
 }
