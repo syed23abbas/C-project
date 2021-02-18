@@ -3,7 +3,9 @@
 #include "Cube.h"
 using namespace std;
 
-Cube::Cube();
+Cube::Cube() {
+    side = 0;
+}
 
 Cube::Cube(int s) {
 	side = s;
