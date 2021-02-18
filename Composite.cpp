@@ -10,8 +10,8 @@ Composite::Composite(Cube* cube, int counts) {
 
 int Composite::getTotalVolume() {
     int volume = 0;
-    for (int i = 0; i < _count; i++) {
-        volume += _cubes[i].getVolume();
+    for (int i = 0; i < count; i++) {
+        volume += cubes[i].getVolume();
 	}
 	return volume;
 }
