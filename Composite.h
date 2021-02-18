@@ -1,4 +1,5 @@
 // Composite.h
+#include "Cube.h"
 class Composite {
 private:
 	Cube* cubes;
